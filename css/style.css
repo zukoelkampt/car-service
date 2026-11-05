@@ -746,3 +746,50 @@ body {
 .table tbody tr:hover {
     background-color: #fef2f2;
 }
+
+.admin-filter {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 16px;
+    background-color: #ffffff;
+    padding: 24px;
+    border-radius: var(--radius);
+    margin-bottom: 28px;
+    box-shadow: var(--shadow-soft);
+    animation: fadeUp 0.6s ease both;
+}
+
+.admin-filter__group {
+    flex: 1 1 220px;
+}
+
+.table__form {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    min-width: 200px;
+}
+
+.table__label {
+    font-size: 12px;
+    color: var(--color-muted);
+}
+
+.table__select,
+.table__input {
+    padding: 8px 10px;
+    font-size: 14px;
+}
+
+.table__button {
+    padding: 8px 12px;
+    min-width: 0;
+    font-size: 14px;
+}
+
+@media (max-width: 480px) {
+    .admin-filter {
+        padding: 16px;
+    }
+}
