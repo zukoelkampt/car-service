@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мои заявки | Гаечный Ключ</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header class="header">
         <a class="header__logo" href="index.html">Гаечный Ключ</a>
@@ -69,6 +71,12 @@
                     <li>Срочность: обычная</li>
                     <li>Комментарий: сезонная замена резины</li>
                 </ul>
+                <form class="review" method="post" action="">
+                    <label class="form__label" for="review-1022">Ваш отзыв</label>
+                    <textarea class="form__textarea" id="review-1022" name="review"
+                        placeholder="Расскажите, как прошёл ремонт" required></textarea>
+                    <button class="button" type="submit">Оставить отзыв</button>
+                </form>
             </article>
 
             <article class="order-card">
@@ -95,4 +103,5 @@
         <p class="footer__year">© 2026 Гаечный Ключ</p>
     </footer>
 </body>
+
 </html>
